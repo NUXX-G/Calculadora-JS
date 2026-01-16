@@ -1,0 +1,103 @@
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color:  #f0fff0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex; 
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+  min-height: 0;
+  }
+  
+
+header {
+  color: black;
+  display: flex;   
+  align-items: center;
+  font-weight: 900 bold;
+  font-size: 2.2rem;
+  font-family:  'Segment7Standard', monospace;
+  padding: 1rem;
+}
+
+
+footer {
+  background-color: #f0fff0;
+  color: #3d6b5d;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400 bold;
+  gap: 2px;
+  text-align: center;
+}
+
+
+.calculadora{
+  background-color: #1f1f1f;  
+  border-radius: 20px;                         
+  padding: 20px;
+  width: 320px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.3);   
+  text-align: center;                          
+  font-size: 1.2rem;
+}
+
+
+.pantallaCalculadora{
+  font-family:  'Segment7Standard', monospace;
+  font-size: 2.5rem;
+  background-color: #000;
+  height: 70px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+
+.botonesCalculadora{
+  background-color:  #2d2d2d;
+  color: #fff;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.botonesCalculadora a:hover{
+  background-color: #3a3a3a;
+}
+
+.error{
+  color: red;
+}
+
+.operacionSuma{
+  color: #4bff4b;
+}
+
+.operacionResta{
+  color: #ff884b;
+}
+
+.operacionMultiplicacion{
+  color: #ff884b;
+}
+
+.operacionDivision{
+  color: #ff884b;
+}
+
+.operacionInverso{
+  color: #ff884b;
+}
+
