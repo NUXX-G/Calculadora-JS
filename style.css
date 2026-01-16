@@ -65,13 +65,77 @@ footer {
   color: white;
 }
 
+.botonesCalculadora3 {
+  display: grid;
+  grid-template-columns: repeat(4, 62px);
+  grid-template-rows: repeat(6, 8.5px);
+  gap: 2px;
 
-.botonesCalculadora{
-  background-color:  #2d2d2d;
-  color: #fff;
+  align-content: center;
+}
+
+.botonesCalculadora4 {
+  display: grid;
+  grid-template-columns: repeat(4, 62px);
+  grid-template-rows: repeat(6, 62px);
+  gap: 2px;
+
+  align-items: center;
+  align-content: center;
+}
+
+.botonNumeros {
   padding: 18px;
+  background: #2d2d2d;
+  color: #fff;
+  width: 20px;
+  height: 20px;
   border-radius: 10px;
 }
+
+.botonOperacion{
+  padding: 18px;
+  background: #4b4bff;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.botonGris{
+  padding: 18px;
+  background: #3b3b3b;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+
+.botonCe {
+  padding: 18px;
+  background: #3b3b3b;
+  color: #fff;
+  width: 80px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 80px;
+}
+
+.botonProv{
+
+    padding: 18px;
+    background: #3b3b3b;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+
+
+
 
 .botonesCalculadora a:hover{
   background-color: #3a3a3a;
@@ -90,14 +154,22 @@ footer {
 }
 
 .operacionMultiplicacion{
-  color: #ff884b;
+  color: #ffbf00;
 }
 
 .operacionDivision{
-  color: #ff884b;
+  color: #00c8ff;
 }
 
 .operacionInverso{
-  color: #ff884b;
+  color: #b084ff;
+}
+
+.operacionCuadrado{
+  color: #ff4bd8;
+}
+
+.operacionRaizCuadrada{
+  color: #00ffbf;
 }
 
