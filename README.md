@@ -113,4 +113,3 @@ El pie de página de la aplicación incluye:
 ## Autor
 
 Nelson Filipe Fardilha Karlsson
-C.F.G.S. Desarrollo de Aplicaciones Multiplataforma
