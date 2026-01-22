@@ -1,74 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title> 
-        Calculadora
-    </title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='style.css'>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="icon" href="calculator-icon-windows-v1.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="imgeCalculadoraPequeñita" href="recursos/calculator-icon-windows-v1.ico">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/segment7" type="text/css"/>
-    <link rel="icon" type="image/ico" href="recursos/calculator-icon-windows-v1.ico">
-
 
 </head>
 <body>
+
     <header>
-        <h1>
-            CALCULADORA
-        </h1>
+        <h1>CALCULADORA</h1>
+    </header>
 
-      </header>
-    
-      <main>    
-        <div class = calculadora>
-            <div class = pantallaCalculadora>
+    <main>
+        <div class="calculadora">
 
+            <div id="pantalla" class="pantalla pantalla-normal">
+                
             </div>
-            <div class="botonesCalculadora3">
-                <div class="botonCe">CE</div>
-                <div class="botonProv">C</div>
-                <div class="botonProv"></div>
+
+            <div class="teclas">
+                <button class="btn especial doble">CE</button>
+                <button class="btn especial">C</button>
+                <button class="btn especial">
+                    <img src="recursos/icon_backspace_white_normal.svg" alt="Retroceso">
+                </button>
+
+
+                <button class="btn especial">
+                    <img src="recursos/icon_1_over_x_white_normal.svg" alt="Inverso">
+                </button>
+                <button class="btn especial">
+                    <img src="recursos/icon_x_squared_white_normal.svg" alt="Cuadrado">
+                </button>
+                <button class="btn especial">
+                    <img src="recursos/icon_square_root_white_normal.svg" alt="Raíz cuadrada">
+                </button>
+                <button class="btn operador">/</button>
+
+
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn operador">x</button>
+
+
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn operador">-</button>
+
+
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn operador">+</button>
+
+
+                <button class="btn doble">0</button>
+                <button class="btn" id="btnPunto">.</button>
+                <button class="btn igual">=</button>
             </div>
-            <div class="botonesCalculadora4">
-                <div class="botonGris">1/x</div>
-                <div class="botonGris">x2</div>
-                <div class="botonGris">vx</div>
-                <div class="botonOperacion">/</div>
 
-                <div class="botonNumeros">7</div>
-                <div class="botonNumeros">8</div>
-                <div class="botonNumeros">9</div>
-                <div class="botonOperacion">x</div>
+        </div>
+    </main>
 
-                <div class="botonNumeros">4</div>
-                <div class="botonNumeros">5</div>
-                <div class="botonNumeros">6</div>
-                <div class="botonOperacion">-</div>
-
-                <div class="botonNumeros">1</div>
-                <div class="botonNumeros">2</div>
-                <div class="botonNumeros">3</div>
-                <div class="botonOperacion">+</div>
-
-            </div>
-              
-            
-        </div>   
-        
-        
-
-      </main>
-    
-      <footer>
-        <p> 
-            EJERCICIO 01 UD 03 - LENGUAJES DE MARCAS Y SISTEMAS DE GESTIÓN DE INFROMACIÓN
+    <footer>
+        <p>
+            EJERCICIO 01 UD 03 - LENGUAJES DE MARCAS Y SISTEMAS DE GESTION DE INFORMACION
         </p>
         <P>
-            <u>PROYECTO REALIZADO POR: </u> NELSON FILIPE FARDILHA KARLSSON (DECLARO QUE NO HE USADO IA EN EL PROYECTO)
+             PROYECTO REALIZADO POR: Nelson Filipe Fardilha Karlsson de 1º DAM - DECLARO QUE NO HE USADO IA EN EL PROYECTO
         </P>
-      </footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
