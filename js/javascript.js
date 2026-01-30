@@ -394,3 +394,87 @@ function aplicarColorResultado(operador)
             break;
     }
 }
+
+
+
+/**
+ * Event listener que detecta las teclas presionadas.
+ * 
+ * Teclas soportadas:
+ * - 0-9: Números
+ * - .: Punto decimal
+ * - +: Suma
+ * - -: Resta
+ * - * o x: Multiplicación
+ * - /: División
+ * - Enter o =: Calcular resultado
+ * - Backspace: Retroceso
+ * - c: Borrar todo
+ * - i: Inverso
+ * - s: Cuadrado
+ * - r: Raíz cuadrada
+ */
+document.addEventListener('keydown', function(event) 
+{
+    const tecla = event.key.toLowerCase();
+    
+    // Números del 0 al 9
+    if (tecla >= '0' && tecla <= '9') 
+    {
+        mostrarNumeroPantalla(tecla);
+    }
+    // Punto decimal
+    else if (tecla === '.') 
+    {
+        const botonPunto = document.getElementById('btnPunto');
+        if (!botonPunto.disabled) {
+            mostrarPuntoPantalla();
+        }
+    }
+    // Operadores
+    else if (tecla === '+') 
+    {
+        manejarOperador('+');
+    }
+    else if (tecla === '-') 
+    {
+        manejarOperador('-');
+    }
+    else if (tecla === '*' || tecla === 'x') 
+    {
+        manejarOperador('x');
+    }
+    else if (tecla === '/') 
+    {
+        event.preventDefault(); // Evitar búsqueda rápida en navegadores
+        manejarOperador('/');
+    }
+    // Igual
+    else if (tecla === 'enter' || tecla === '=') 
+    {
+        calcularOperacion();
+    }
+    // Retroceso
+    else if (tecla === 'backspace') 
+    {
+        retroceder();
+    }
+    // Borrar todo
+    else if (tecla === 'c') 
+    {
+        borrarTodo();
+    }
+    // Operaciones inmediatas
+    else if (tecla === 'i') 
+    {
+        operacionInmediata('inverso');
+    }
+    else if (tecla === 's') 
+    {
+        operacionInmediata('cuadrado');
+    }
+    else if (tecla === 'r') 
+    {
+        operacionInmediata('raiz');
+    }
+});
