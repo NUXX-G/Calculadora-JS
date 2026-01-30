@@ -19,52 +19,50 @@
         <div class="calculadora">
 
             <div id="pantalla" class="pantalla pantalla-normal">
-                <p>
-                    0
-                </p>
+                <p>0</p>
             </div>
 
             <div class="teclas">
-                <button class="btn especial doble">CE</button>
-                <button class="btn especial">C</button>
-                <button class="btn especial">
+                <button class="btn especial doble" onclick="borrarEntrada()">CE</button>
+                <button class="btn especial" onclick="borrarTodo()">C</button>
+                <button class="btn especial" onclick="retroceder()">
                     <img src="recursos/icon_backspace_white_normal.svg" alt="Retroceso">
                 </button>
 
 
-                <button class="btn especial">
+                <button class="btn especial" onclick="operacionInmediata('inverso')">
                     <img src="recursos/icon_1_over_x_white_normal.svg" alt="Inverso">
                 </button>
-                <button class="btn especial">
+                <button class="btn especial" onclick="operacionInmediata('cuadrado')">
                     <img src="recursos/icon_x_squared_white_normal.svg" alt="Cuadrado">
                 </button>
-                <button class="btn especial">
+                <button class="btn especial" onclick="operacionInmediata('raiz')">
                     <img src="recursos/icon_square_root_white_normal.svg" alt="Raíz cuadrada">
                 </button>
-                <button class="btn operador" onclick="appendToDisplay('/')">/</button>
+                <button class="btn operador" onclick="manejarOperador('/')">/</button>
 
 
-                <button class="btn" onclick="appendToDisplay('7')">7</button>
-                <button class="btn" onclick="appendToDisplay('8')">8</button>
-                <button class="btn" onclick="appendToDisplay('9')">9</button>
-                <button class="btn operador" onclick="appendToDisplay('x')">x</button>
+                <button class="btn" onclick="mostrarNumeroPantalla('7')">7</button>
+                <button class="btn" onclick="mostrarNumeroPantalla('8')">8</button>
+                <button class="btn" onclick="mostrarNumeroPantalla('9')">9</button>
+                <button class="btn operador" onclick="manejarOperador('x')">x</button>
 
 
-                <button class="btn" onclick="appendToDisplay('4')">4</button>
-                <button class="btn" onclick="appendToDisplay('5')">5</button>
-                <button class="btn" onclick="appendToDisplay('6')">6</button>
-                <button class="btn operador" onclick="appendToDisplay('-')">-</button>
+                <button class="btn" onclick="mostrarNumeroPantalla('4')">4</button>
+                <button class="btn" onclick="mostrarNumeroPantalla('5')">5</button>
+                <button class="btn" onclick="mostrarNumeroPantalla('6')">6</button>
+                <button class="btn operador" onclick="manejarOperador('-')">-</button>
 
 
-                <button class="btn" onclick="appendToDisplay('1')">1</button>
-                <button class="btn" onclick="appendToDisplay('2')">2</button>
-                <button class="btn" onclick="appendToDisplay('3')">3</button>
-                <button class="btn operador" onclick="appendToDisplay('+')">+</button>
+                <button class="btn" onclick="mostrarNumeroPantalla('1')">1</button>
+                <button class="btn" onclick="mostrarNumeroPantalla('2')">2</button>
+                <button class="btn" onclick="mostrarNumeroPantalla('3')">3</button>
+                <button class="btn operador" onclick="manejarOperador('+')">+</button>
 
 
-                <button class="btn doble" onclick="appendToDisplay('0')">0</button>
-                <button class="btn" id="btnPunto" onclick="appendToDisplay('.')">.</button>
-                <button class="btn igual" onclick="calculateResult()">=</button>
+                <button class="btn doble" onclick="mostrarNumeroPantalla('0')">0</button>
+                <button class="btn" id="btnPunto" onclick="mostrarPuntoPantalla()">.</button>
+                <button class="btn igual" onclick="calcularOperacion()">=</button>
             </div>
 
         </div>
@@ -75,12 +73,13 @@
             EJERCICIO 01 UD 03 - LENGUAJES DE MARCAS Y SISTEMAS DE GESTION DE INFORMACION
         </p>
         <P>
-             PROYECTO REALIZADO POR: Nelson Filipe Fardilha Karlsson de 1º DAM - DECLARO QUE NO HE USADO IA EN EL PROYECTO
+            PROYECTO REALIZADO POR: Nelson Filipe Fardilha Karlsson de 1º DAM - DECLARO QUE NO HE USADO IA EN EL PROYECTO
         </P>
 
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/javascript.js"></script>
 
 </body>
+
 </html>
