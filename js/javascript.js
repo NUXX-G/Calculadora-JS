@@ -418,7 +418,7 @@ document.addEventListener('keydown', function(event)
 {
     const tecla = event.key.toLowerCase();
     
-    // Números del 0 al 9
+    // Numeros del 0 al 9
     if (tecla >= '0' && tecla <= '9') 
     {
         mostrarNumeroPantalla(tecla);
@@ -446,7 +446,7 @@ document.addEventListener('keydown', function(event)
     }
     else if (tecla === '/') 
     {
-        event.preventDefault(); // Evitar búsqueda rápida en navegadores
+        event.preventDefault(); // Evitar busqueda rapida en navegadores
         manejarOperador('/');
     }
     // Igual
